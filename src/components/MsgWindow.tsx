@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ContactMenu } from './contactMenu/ContactMenu';
 import { Chat } from './chat/Chat';
 import { Login } from './login/Login';

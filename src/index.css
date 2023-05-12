@@ -109,18 +109,7 @@
   display: flex;
   gap: 5px;
 }
-@media (max-width: 500px) {
-  .left__contact-add {
-    flex-direction: column;
-  }
-  .left__contact-input {
-    width: 90%;
-  }
-  .left__contact-button {
-    width: 50%;
-  }
 
-}
 
 .contact {
   width: 100%;
@@ -265,4 +254,16 @@
 .login-loading {
 color: green;
 font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  .left__contact-add {
+    flex-direction: column;
+  }
+  .left__contact-input {
+    width: 90%;
+  }
+  .left__contact-button {
+    width: 50%;
+  }
 }
