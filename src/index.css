@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
+.layout {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #eae6df;
+  background-image: linear-gradient(180deg,#eae6df,#d1d7db)
+}
+
+.layout::after {
+  content: '';
+  top: 0;
+  position: fixed;
+  height: 127px;
+  width: 100vw;
+  z-index: 1;
+  background-color: #00a884;
+}
+
+.wrapper {
+  z-index: 2;
+  position: relative;
+  margin: 0 auto;
+  top: 19px;
+  width: calc(100% - 38px);
+  max-width: 1600px;
+  height: calc(100% - 38px);
+  display: flex;
+}
+.msg_left {
+  background-color: white;
+  flex: 0 0 30%;
+}
+.msg_right {
+  position: relative;
+  background-color: #eae6df;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.left_header,
+.right_header {
+  position: relative;
+  
+  height: 59px;
+  background-color: #f0f2f5;
+  width: 100%;
+}
+
+.right_header {
+  border-left: 1px solid #d1d7db;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.msg_right--backasset {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  background-image: url('https://cdn.discordapp.com/attachments/987744703212580916/1106274003670278154/bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png');
+  background-repeat: repeat;
+}
+.left__contact-menu {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.left__contact-button {
+  border: none;
+  background-color:#02bc94;
+  font-size: 20px;
+  color: white;
+  width: 20%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.left__contact-input {
+  border: none;
+  background-color:#02bc94;
+  font-size: 20px;
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.left__contact-button::placeholder {
+  color: rgb(218, 218, 218);
+}
+.left__contact-add {
+  display: flex;
+  gap: 5px;
+}
+@media (max-width: 500px) {
+  .left__contact-add {
+    flex-direction: column;
+  }
+  .left__contact-input {
+    width: 90%;
+  }
+  .left__contact-button {
+    width: 50%;
+  }
+
+}
+
+.contact {
+  width: 100%;
+  padding: 10px;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.contact:hover {
+  background-color: #f0f2f5;
+}
+.active {
+  background-color: #f0f2f5;
+}
+.contact_number {
+  font-size: 19px;
+}
+.right-current {
+  font-size: 18px;
+  padding: 5px;
+}
+.right_footer {
+  width: 100%;
+  z-index: 2;
+  min-height: 62px;
+  background-color: #f0f2f5;
+  padding: 5px 16px;
+  display: flex;
+}
+
+.right_content {
+  flex: 1 1 0;
+  display: flex;
+  align-items: end;
+}
+.footer-form {
+  margin: 5px 8px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form-msginput {
+  padding: 9px 12px;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.content_wrapper {
+  width: 100%;
+  overflow-y: auto;
+  max-height: 1200px;
+  z-index: 5;
+}
+
+.message {
+  border-radius: 7.5px;
+  position: relative;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  padding: 8px;
+  width: fit-content;
+  margin: 10px 10px;
+  margin-left: 25px;
+}
+.message-receive {
+  margin-right: 25px;
+  margin-left: auto;
+  background-color: #d9fdd3;
+}
+
+.form-svg {
+  opacity: 0.7;
+}
+
+.login-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-menu {
+  width: 300px;
+  height: 220px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  
+}
+.login-input {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px 10px;
+  font-weight: 500;
+  border: none;
+  background-color: #f0f2f5;
+
+}
+
+.login-button {
+  background-color: #00a884;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.login-title {
+  color: #008069;
+  font-size: 17px;
+}
+
+.login-process {
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-error {
+  color: red;
+  font-size: 12px;
+}
+.login-loading {
+color: green;
+font-size: 12px;
+}
