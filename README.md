@@ -1,6 +1,7 @@
 [https://drive.google.com/file/d/1JYn6218-lMFG__og5OMBvO_wnmfayQnM/view](https://drive.google.com/file/d/1JYn6218-lMFG__og5OMBvO_wnmfayQnM/view)
 
-Задача: вам нужно сделать drag-and-drop конструктор, с помощью которого можно собрать калькулятор
+В рамках тестового задания требуется разработать пользовательский интерфейс для
+отправки и получений сообщений WhatsApp
 # green-api test task
 
 [https://crispy-octo-disco.vercel.app](https://crispy-octo-disco.vercel.app)
