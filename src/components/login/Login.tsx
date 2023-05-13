@@ -20,7 +20,7 @@ export const Login: React.FC<LoginProps> = ({ setLoginInfo, loginInfo, setAuth }
     try {
       setLoginLoading(true);
       const res = await fetch(
-        `https://api.green-api.com/waInstance${loginInfo?.idInstance}/ReceiveNotification/${loginInfo?.apiTokenInstance}`,
+        `https://api.green-api.com/waInstance${loginInfo?.idInstance}/getStatusInstance/${loginInfo?.apiTokenInstance}`,
       );
 
       if (res.ok) {
