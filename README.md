@@ -5,7 +5,7 @@
 # green-api test task
 
 [https://crispy-octo-disco.vercel.app](https://crispy-octo-disco.vercel.app)
-
+### `npm install`
 ### `npm run dev`
 
 Runs the app in the development mode.\
